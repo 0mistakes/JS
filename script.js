@@ -1,1 +1,2 @@
-alert('bebra amogus')
+"use strict";
+alert('text!');
