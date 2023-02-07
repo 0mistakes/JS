@@ -1,0 +1,1 @@
+alert('bebra amogus')
