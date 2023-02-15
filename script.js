@@ -1,5 +1,3 @@
-let obj = { 7: "a", 50: "b", 23: "c" };
-
-console.log(obj[50]);
-console.log(obj[23]);
-console.log(obj[7]);
+let obj = { x: 1, y: 2, z: 3 }; 
+let keys = Object.keys(obj);
+console.log(keys);
