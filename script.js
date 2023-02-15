@@ -1,24 +1,14 @@
-let num1 = 1;
-let num2 = 2;
-console.log('сумма: ' + (num1 + num2));
-
-let a = 1;
-let b = 2;
-let c = 3;
-console.log(a + b + c);
-
-let num = '123';
-let sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
-console.log(sum);
-
-num = 123;
-console.log(String(num)[0]);
-
-a = 0;
-console.log(++a);
-
-num = 123;
-console.log(String(num).length);
-
-a = 24 * 60 * 60;
-console.log(a);
+const secondsPerDay = 24 * 60 * 60;
+console.log(secondsPerDay); // 86400
+const secondsPer30Days = 30 * secondsPerDay;
+console.log(secondsPer30Days); // 2592000
+const secondsPerYear = 365 * secondsPerDay;
+console.log(secondsPerYear); // 31536000
+const minutesPerDay = 24 * 60;
+console.log(minutesPerDay); // 1440
+const minutesPerYear = 365 * minutesPerDay;
+console.log(minutesPerYear); // 525600
+const bytesPerMegabyte = 1024 * 1024;
+console.log(bytesPerMegabyte); // 1048576
+const bytesPerGigabyte = 1024 * bytesPerMegabyte;
+console.log(bytesPerGigabyte); // 1073741824
