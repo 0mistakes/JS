@@ -1,10 +1,14 @@
 
-"use strict";
-
-let today = new Date();
-var dd = String(today.getDate()).padStart(2, "0");
-var mm = String(today.getMonth() + 1).padStart(2, "0");
-var yyyy = today.getFullYear();
-console.log(yyyy);
-let date = { year: yyyy, month: mm, day: dd };
-document.write(`${date.year}-${date.month}-${date.day}`);
+let obj = {
+    "1a": 1,
+    b2: 2,
+    "c-c": 3,
+    "d 4": 4,
+    e5: 5,
+  };
+  
+  console.log(obj['1a']);
+  console.log(obj.b2);
+  console.log(obj['c-c']);
+  console.log(obj['d 4']);
+  console.log(obj.e5);
