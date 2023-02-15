@@ -1,10 +1,24 @@
-document.write('Привет, мир!');
+let num1 = 1;
+let num2 = 2;
+console.log('сумма: ' + (num1 + num2));
 
-document.write('<em>Курсивный текст</em>');
+let a = 1;
+let b = 2;
+let c = 3;
+console.log(a + b + c);
 
-let str = 'text';
-document.write('<em>' + str + '</em>');
+let num = '123';
+let sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
+console.log(sum);
 
-for (let i = 1; i <= 5; i++) {
-    document.write(i + '<br>');
-}
+num = 123;
+console.log(String(num)[0]);
+
+a = 0;
+console.log(++a);
+
+num = 123;
+console.log(String(num).length);
+
+a = 24 * 60 * 60;
+console.log(a);
