@@ -1,14 +1,15 @@
-const secondsPerDay = 24 * 60 * 60;
-console.log(secondsPerDay); // 86400
-const secondsPer30Days = 30 * secondsPerDay;
-console.log(secondsPer30Days); // 2592000
-const secondsPerYear = 365 * secondsPerDay;
-console.log(secondsPerYear); // 31536000
-const minutesPerDay = 24 * 60;
-console.log(minutesPerDay); // 1440
-const minutesPerYear = 365 * minutesPerDay;
-console.log(minutesPerYear); // 525600
-const bytesPerMegabyte = 1024 * 1024;
-console.log(bytesPerMegabyte); // 1048576
-const bytesPerGigabyte = 1024 * bytesPerMegabyte;
-console.log(bytesPerGigabyte); // 1073741824
+"use strict";
+
+let r_circle = Number(prompt("Enter radius of circle: ")),
+  Pi = Math.PI;
+document.write(`Задание 1: ${Pi * r_circle ** 2}`);
+let a_square = Number(prompt("Enter length of square: "));
+document.write(`<br>Задание 2: ${a_square ** 2}`);
+let l_rect = Number(prompt("Enter length of rectangle: ")),
+  w_rect = Number(prompt("Enter width of rectangle: "));
+document.write(`<br>Задание 3: ${w_rect * l_rect}`);
+document.write(`<br>Задание 4: ${2 * (l_rect + w_rect)}`);
+let tc = Number(prompt("Enter temperature in Celcius: "));
+document.write(`<br>Задание 5: ${tc * (9 / 5) + 32}`);
+let fc = Number(prompt("Enter temperature in Fahrenheit: "));
+document.write(`<br>Задание 6: ${(fc - 32) / (9 / 5)}`);
