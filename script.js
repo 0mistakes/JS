@@ -1,8 +1,5 @@
-let arr = ["a", "b", "c", "d", "e"];
-document.write(
-  `Длина до удаления: ${arr.length}<br>Массив до удаления: ${arr}`
-);
-delete arr[1], delete arr[3];
-document.write(
-  `Длина после удаления: ${arr.length}<br>Массив после удаления: ${arr}`
-);
+let arr = [1, 2, 3, 4, 5];
+console.log(`Задание 1: ${arr[arr.length - 1]}`);
+console.log(`Задание 2: ${arr[0] + arr[1] + arr[2] + arr[3] + arr[4]}`);
+console.log(`Задание 3: ${arr.length}`);
+console.log(`Задание 4: ${arr.length}`);
