@@ -1,7 +1,8 @@
-let arr = ["a", "b", "c"],
-  array = [1, 2, 3, 4, 5],
-  key1 = 1,
-  key2 = 2;
-
-document.write(`Задание 1: ${arr[key2]}<br>`);
-document.write(`Задание 2: ${array[key1] + array[key2]}`);
+let arr = ["a", "b", "c", "d", "e"];
+document.write(
+  `Длина до удаления: ${arr.length}<br>Массив до удаления: ${arr}`
+);
+delete arr[1], delete arr[3];
+document.write(
+  `Длина после удаления: ${arr.length}<br>Массив после удаления: ${arr}`
+);
