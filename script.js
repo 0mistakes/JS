@@ -1,9 +1,21 @@
 "use strict";
 
-let obj = {x: 1, y: 2, z: 3};
+// let key = 'x';
 
-// let prop = 'x';
-// console.log(obj[prop]);
+// let obj = {
+// 	[key]: 1,
+// 	y: 2,
+// 	z: 3
+// };
+let key1 = 'x';
+let key2 = 'y';
+let key3 = 'z';
 
-let prop = 'x';
-document.write(obj[prop]);
+let obj = {
+    [key1]: 1,
+    [key2]: 2,
+	[key3]: 3
+};
+
+
+console.log(obj['x'])
