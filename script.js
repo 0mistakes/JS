@@ -1,11 +1,6 @@
-// object
-let arr = [1, 2, 3];
-  console.log( typeof arr );
-// object
-arr = [1, 2, 3];
-console.log( typeof arr[0] );
-// number
+"use strict";
 
-arr = ['1', '2', '3'];
-console.log( typeof arr[0] );
-//string
+console.log( Array.isArray([1, 2, 3]) );
+// true
+console.log( Array.isArray({x: 1, y: 2, z: 3}) );
+// false
