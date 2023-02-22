@@ -1,22 +1,15 @@
 "use strict";
 
-let test = {x: 1, y: 2, z: 3};
-console.log(test);
-//object
-test = {x: 1, y: 2, z: 3};
-console.log(test.x);
-//primitive
-test = [1, 2, 3];
-console.log(test);
-//object
-test = [1, 2, 3];
-console.log(test[1]);
-//primitive
-test1 = [1, 2, 3];
-test2 = 1;
-console.log(test1);
-//object
-test1 = [1, 2, 3];
-test2 = 1;
-console.log(test1[test2]);
-//primitive 
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+
+arr1[0] = 'a';
+console.log(arr2);
+// 'a', 2, 3
+
+
+let arr3 = [1, 2, 3];
+let arr4 = arr3;
+arr3[0] = 'a';
+arr4[1] = 'b';
+console.log(arr3);
