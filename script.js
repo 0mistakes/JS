@@ -1,4 +1,11 @@
-"use strict";
+// object
+let arr = [1, 2, 3];
+  console.log( typeof arr );
+// object
+arr = [1, 2, 3];
+console.log( typeof arr[0] );
+// number
 
-let obj = {x: 1, y: 2, z: 3};
-document.write( typeof obj['x'] );
+arr = ['1', '2', '3'];
+console.log( typeof arr[0] );
+//string
