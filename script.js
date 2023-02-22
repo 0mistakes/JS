@@ -1,9 +1,9 @@
 "use strict";
 
-let test = 'abc';
-let test2 = 'abc';
+let test1 = '123';
+let test2 = 123;
 
-if (test == test2) {
+if (test1 == test2) {
 	console.log('+++');
 } else {
 	console.log('---');
