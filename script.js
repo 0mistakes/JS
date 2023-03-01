@@ -1,14 +1,61 @@
-let num = Math.floor(Math.random() * 21);
-console.log(`num = ${num}`);
-if (num > 0 && num < 5) {
-  console.log(`0 < num < 5`);
-} else if (num > 10 && num <= 20) {
-  console.log(`10 < num < 20`);
+let num1 = -10;
+let num2 = -10;
+
+if (num1 >= 0 || num2 >= 0) {
+  console.log("+++");
+} else {
+  console.log("---");
 }
-let num1 = Math.floor(Math.random() * 10);
-let num2 = Math.floor(Math.random() * 10);
-console.log(`num1 = ${num1}`);
-console.log(`num2 = ${num2}`);
-if (num1 <= 1 && num2 >= 3) {
-  console.log(`num1 <= 1 && num2 >= 3`);
+num1 = 0;
+num2 = 0;
+
+if (num1 >= 0 || num2 >= 0) {
+  console.log("+++");
+} else {
+  console.log("---");
+}
+num1 = 0;
+num2 = 5;
+
+if (num1 >= 0 || num2 >= 0) {
+  console.log("+++");
+} else {
+  console.log("---");
+}
+num1 = 5;
+num2 = 5;
+
+if (num1 >= 0 || num2 >= 0) {
+  console.log("+++");
+} else {
+  console.log("---");
+}
+num1 = -5;
+num2 = 15;
+
+if (num1 >= 0 || num2 >= 0) {
+  console.log("+++");
+} else {
+  console.log("---");
+}
+let num = 1;
+
+if (num == 0 || num == 1) {
+  console.log("+++");
+} else {
+  console.log("---");
+}
+num = 2;
+
+if (num == 0 || num == 1) {
+  console.log("+++");
+} else {
+  console.log("---");
+}
+num = 2;
+
+if (num == 0 || num == 1 || num == 2) {
+  console.log("+++");
+} else {
+  console.log("---");
 }
