@@ -1,11 +1,12 @@
+"use strict";
+
 let elem = document.querySelector('#elem');
 elem.addEventListener('blur', parent);
 
 function parent() {
-	console.log(this.value);
+	child(this); 
 	
-	function child() {
-		console.log(this.value); 
+	function child(param) {
+		console.log(param.value); 
 	}
-	child();
 }
