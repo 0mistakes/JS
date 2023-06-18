@@ -1,7 +1,9 @@
-let elems = document.querySelectorAll('p');
+let parent = document.querySelector('#elem');
+let li = document.createElement('li');
+let li1 = document.createElement('li');
 
-for (let elem of elems) {
-	elem.addEventListener('click', function() {
-		elem.remove();
-	});
-}
+li.innerHTML = 'end';
+li1.innerHTML = 'start';
+
+parent.append(li);
+parent.prepend(li1);
