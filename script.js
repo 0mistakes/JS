@@ -1,23 +1,13 @@
-let arr1 = [1, 2, 3, 4, 5];
+let arr = ['a', 'b', 'c', 'a', 
+	'a', 'b']; 
+let count = {};
 
-         function result(arr) {
-            console.log(arr.shift());
-            if (arr.length != 0) {
-               result(arr);
-            }
-         }
-         result(arr1);
+for (let elem of arr) {
+	if (count[elem] === undefined) {
+		count[elem] = 1;
+	} else {
+		count[elem]++;
+	}
+}
 
-
-
-
-
-function getSum(arr) {
-
-      let sum = Math.pow(arr.shift(), 2);
-      if (arr.length !== 0) {
-         sum += getSum(arr);
-      }
-      return sum;
-    }
-    console.log(getSum([1, 2, 3]));
+console.log(count);
