@@ -1,13 +1,14 @@
 window.onload = function() {
-  let elem = document.querySelector('#elem');
+  let ul = document.querySelector('#elem');
   
-  elem.addEventListener('click', func);
-  elem.addEventListener('dblclick', func);
-  function func(event) {
-    if (event.type === 'click') {
-      event.target.style.backgroundColor = 'green';
-    } else if (event.type === 'dblclick') {
-      event.target.style.backgroundColor = 'red';
+  ul.addEventListener('click', function(event) {
+    let target = event.target;
+    if (target.tagName === 'LI') {
+      target.textContent += '!';
+    } else if (target.tagName === 'UL') {
+      let li = document.createElement('li');
+      li.textContent = 'new item';
+      ul.appendChild(li);
     }
-  }
+  });
   }
