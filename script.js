@@ -1,9 +1,6 @@
-let month = new Date();
-let m = month.getMonth();
-let months = [
-	'янв', 'фев', 'мар', 'апр', 'май', 
-		'июн', 
-	'июл', 'авг', 'сен', 'окт', 'ноя', 
-		'дек' 
-];
-console.log(months[m])
+let date = new Date(2003, 12, 31); 
+let day  = date.getDay();
+let days = ['вс', 'пн', 'вт', 'ср', 
+	'чт', 'пт', 'сб']; 
+
+console.log(days[day]);
