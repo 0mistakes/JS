@@ -1,139 +1,66 @@
-let arr = [];
-for (let i = 0, k = 2; i < 3; i++) {
-   arr[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr[i].push(k++);
-   }
-}
-console.log(arr);
-
-
-let arr2 = [];
-let k = 0;
-for (let i = 0; i < 4; i++) {
-   arr2[i] = [];
-   for (let j = 0; j < 3; j++) {
-      k += 2
-      arr2[i].push(k);
-   }
-}
-console.log(arr2);
-
-
-let arr3 = [];
-for (let i = 0, p = 1; i < 2; i++) {
-   arr3[i] = []
-   for (let j = 0; j < 2; j++) {
-      arr3[i][j] = [];
-      for (let k = 0; k < 2; k++) {
-         arr3[i][j].push(p++);
-      };
-   };
+let obj = {
+  key1: {
+     key1: 1,
+     key2: 2,
+     key3: 3,
+  },
+  key2: {
+     key1: 4,
+     key2: 5,
+     key3: 6,
+  },
+  key3: {
+     key1: 7,
+     key2: 8,
+     key3: 9,
+  },
 };
-console.log(arr3);
+
+let sum1 = obj.key1.key1 + obj.key1.key2 + obj.key1.key3;
+let sum2 = obj.key2.key1 + obj.key2.key2 + obj.key2.key3;
+let sum3 = obj.key3.key1 + obj.key3.key2 + obj.key3.key3;
+
+console.log(sum1 + sum2 + sum3)
+
+let obj1 = {
+  1: {
+     1: 'a1',
+     2: 'a2',
+     3: 'a3',
+  },
+  2: {
+     1: 'b1',
+     2: 'b2',
+     3: 'b3',
+  },
+  3: {
+     1: 'c1',
+     2: 'c2',
+     3: 'c3',
+  },
+};
+
+console.log(obj1[2][2]);
+console.log(obj1[3][1]);
+
+let obj2 = {
+  key1: {
+     a: 1,
+     b: 2,
+     c: {
+        d: 3,
+        e: 4,
+     }, 
+     f: 5,
+  },
+  key2: {
+     g: 6,
+     h: 7,
+  },
+};
+
+let sum11 = obj2.key1.a + obj2.key1.b + obj2.key1.c.d + obj2.key1.c.e + + obj2.key1.f;
+let sum22 = obj2.key2.g + obj2.key2.h;
 
 
-let arr4 = [];
-for (let i = 0, k = 1; i < 3; i++) {
-   arr4[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr4[i].push(k);
-      k++;
-   }
-}
-console.log(arr4);
-
-
-let arr5 = [];
-let k5 = 1;
-for (let i = 0; i < 3; i++) {
-   arr5[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr5[i].push(k5++);
-   }
-}
-console.log(arr5);
-
-
-let arr6 = [];
-let k6 = 1;
-for (let i = 0; i < 3; i++) {
-   arr6[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr6[i][j] = k6;
-      k6++;
-   }
-}
-console.log(arr6);
-
-
-let arr7 = [];
-let k7 = 1;
-for (let i = 0; i < 3; i++) {
-   arr7[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr7[i].push(k7++)
-   }
-}
-console.log(arr7);
-
-
-let arr8 = [];
-for (let i = 0, k = 1; i < 3; i++) {
-   arr8[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr8[i].push(k++)
-   }
-}
-console.log(arr8);
-
-
-let arr9 = [];
-for (let i = 0, k = 1; i < 3; i++) {
-   arr9[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr9[i].push(k++)
-   }
-}
-console.log(arr9);
-
-
-let arr10 = [];
-for (let i = 0, k = 1; i < 3; i++) {
-   arr10[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr10[i].push(k++)
-   }
-}
-console.log(arr10);
-
-
-let arr11 = [];
-for (let i = 0, k = 1; i < 3; i++) {
-   arr11[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr11[i].push(k++)
-   }
-}
-console.log(arr11);
-
-
-let arr12 = [];
-let k12 = 1;
-for (let i = 0; i < 3; i++) {
-   arr12[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr12[i].push(k12++)
-   }
-}
-console.log(arr12);
-
-
-let arr13 = [];
-for (let i = 0, k = 1; i < 3; i++) {
-   arr13[i] = [];
-   for (let j = 0; j < 3; j++) {
-      arr13[i].push(k++)
-   }
-}
-console.log(arr13);
+console.log(sum11 + sum22);
