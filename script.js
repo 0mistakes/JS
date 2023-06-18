@@ -1,25 +1,20 @@
 "use strict";
 
-let str = 'abcde';
+let num2 = 12345;
+let str2 = String(num2);
 
-if (str[0] == 'a') {
-	document.write('yes', '<br>');
+if (str2[4] == 0) {
+	document.write('+++', '<br>');
 } else {
-	document.write('no', '<br>');
+	document.write('---', '<br>');
 }
 
-let str1 = 'abx';
 
-if (str1[2] == 'x') {
-	document.write('yes', '<br>');
+let num = 2243248;
+let str = String(num);
+
+if (str[6] == 0 || str[6] == 2 || str[6] == 4 || str[6] == 6 || str[6] == 8) {
+	document.write('+++');
 } else {
-	document.write('no', '<br>');
-}
-
-let str2 = 'abc';
-
-if (str2[0] == 'a' || str2[0] == 'b') {
-	document.write('yes', '<br>');
-} else {
-	document.write('no', '<br>');
+	document.write('---');
 }
