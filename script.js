@@ -1,9 +1,9 @@
-let date = new Date();
-console.log(date.getDay());
-// 2
-if (date == 0 || date == 6){
-console.log("Сегодня выходной")
-}
-else{
-console.log("Сегодня рабочий день")
-}
+let month = new Date();
+let m = month.getMonth();
+let months = [
+	'янв', 'фев', 'мар', 'апр', 'май', 
+		'июн', 
+	'июл', 'авг', 'сен', 'окт', 'ноя', 
+		'дек' 
+];
+console.log(months[m])
