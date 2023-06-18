@@ -1,27 +1,38 @@
-"use strict";
-
-
-let res = 0;
-
-for (let i = 2; i <= 100; i++) {
-	if (i % 2 == 0) {
-		res += i;
-	}
+for (let elem of arr) {
+	res += elem;
 }
+
 console.log(res);
 
+
+arr = [2, 5, 9, 3, 1, 4];
 res = 0;
 
-for (let i = 1; i <= 99; i++) {
-	if (i % 2 == 1) {
-		res += i;
+for (let elem of arr) {
+	if (elem % 2 == 0){
+		res += elem;
 	}
+	
 }
+
 console.log(res);
 
+
+arr = [2, 5, 9, 3, 1, 4];
+res = 0;
+
+for (let elem of arr) {
+	res += elem**2;	
+}
+
+console.log(res);
+
+
+arr = [2, 5, 9, 3, 1, 4];
 res = 1;
 
-for (let i = 1; i <= 20; i++) {
-	res *= i;
+for (let elem of arr) {
+	res *= elem;	
 }
+
 console.log(res);
