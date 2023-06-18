@@ -1,10 +1,10 @@
-let elem = document.querySelector('#elem');
-elem.dataset.num = 123;
+let elems = document.querySelectorAll('li');
+let sum = 0;
 
-console.log(elem.childNodes[0]);
-console.log(elem.childNodes[1]);
-console.log(elem.childNodes[2]);
-
-for (let node of elem.childNodes) {
-    console.log(node);
+for (let elem of elems) {
+    let text = +elem.textContent;
+    if (text % 6 === 0) {
+        sum += text;
+    }
 }
+console.log(sum)
