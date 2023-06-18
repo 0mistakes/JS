@@ -1,6 +1,3 @@
-let date = new Date(2003, 12, 31); 
-let day  = date.getDay();
-let days = ['вс', 'пн', 'вт', 'ср', 
-	'чт', 'пт', 'сб']; 
-
-console.log(days[day]);
+let date = new Date(2015, 1, 1, 23, 
+	59, 59); 
+console.log(date.getTime());
