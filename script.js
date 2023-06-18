@@ -1,27 +1,26 @@
-let day = new Date(2023, 4, 2, 23);
-let now = new Date(2023, 4, 3, 15);
-let diff1 = now - day;
-console.log(diff1 / 1000);
+let date1 = "20201131";
+let date2 = "20201201";
+    if (date1 > date2) {
+        console.log("2020.11.31 больше");
+    } else {
+        console.log("2020.12.01 больше");
+}
 // 2
-let day1 = new Date(2023, 4, 3, 23);
-let now1 = new Date(2023, 4, 3, 15);
-let diff2 = day1 - now1;
-console.log(diff2 / 1000);
+let date3 = "0921";
+let date4 = "0923";
+    if (date3 > date4) {
+        console.log("09-21 больше");
+    } else {
+        console.log("09-23 больше");
+}
 // 3
-let day2 = new Date(2023, 12, 31, 23);
-let now2 = new Date(2023, 4, 3, 15);
-let diff3 = day2 - now2;
-console.log(diff3 / 1000 / 60 / 60 / 24);
-// 4
-function isLeap() {
-    if (new Date().getFullYear() == 12) {
-        return true;
-    } else {
-        return false;
+let date = "03-20";
+    if (date >= "01-01" && date <= "03-08") {
+        console.log("Водолей");
     }
-}
-    if (isLeap == true) {
-        console.log("Високосный");
-    } else {
-        console.log("Обычный");
-}
+    if (date >= "03-09" && date <= "06-17") {
+        console.log("Рыбы");
+    }
+    if (date >= "06-18" && date <= "12-31") {
+        console.log("Козерог");
+    }
