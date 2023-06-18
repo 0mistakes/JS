@@ -1,20 +1,17 @@
 "use strict";
 
-let num2 = 12345;
-let str2 = String(num2);
+let a = 10;
 
-if (str2[4] == 0) {
-	document.write('+++', '<br>');
+if (a % 2 == 0) {
+	document.write('четное', '<br>');
 } else {
-	document.write('---', '<br>');
+	document.write('нечетное', '<br>');
 }
 
+let b = 9;
 
-let num = 2243248;
-let str = String(num);
-
-if (str[6] == 0 || str[6] == 2 || str[6] == 4 || str[6] == 6 || str[6] == 8) {
-	document.write('+++');
+if (b % 3 == 0) {
+	document.write('делится');
 } else {
-	document.write('---');
+	document.write('не делится');
 }
