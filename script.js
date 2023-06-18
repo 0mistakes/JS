@@ -1,10 +1,11 @@
-let p1 = document.querySelector("#p1");
-let btn1 = document.querySelector("#btn1");
-btn1.addEventListener("click", () => {
-    console.log(p1.innerHTML);
-});
+let input1 = document.querySelector("#elem1");
+let button1 = document.querySelector("#btn1");
+button1.addEventListener('click', () => {
+    console.log(input1.type)
+})
 //  2
-let btn2 = document.querySelector("#btn2");
-btn2.addEventListener("click", () => {
-    p1.innerHTML = `<b>${p1.textContent}</b>`
-});
+let button2 = document.querySelector("#btn2");
+button2.addEventListener('click', () => {
+    input1.type = "submit"
+    console.log(input1.type)
+})
