@@ -1,12 +1,32 @@
 "use strict";
 
 
-for (let i = 0; i <= 9; i++) {
-	for (let j = 0; j <= 9; j++) {
-		let num = 3;
-	}
-	
-	console.log(num);
-}
+let arr1 = [];
 
-console.log(num);
+   for (let i = 1; i <= 10; i++) {
+      arr1.push(i)
+   }
+
+   console.log(arr1)
+
+   let arr2 = [];
+
+   for (let i = 1; i <= 10; i++) {
+      arr2.push('x')
+   }
+
+   console.log(arr2)
+
+   let arr3 = [1, -9, 3, -5, 5, 6, -2, 7, -1];
+   let newArr = [];
+
+   for (let key in arr3) {
+      if (arr3[key] > 0) {
+         newArr.push(arr3[key]);
+      } else {
+         continue;
+      }
+   }
+
+   console.log(arr3); 
+   console.log(newArr); 
