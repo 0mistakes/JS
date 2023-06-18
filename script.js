@@ -1,16 +1,18 @@
 "use strict";
 
-let num = 99;
-if (num >= 10 && num <= 99){
-    var tmp, sum = 0;
-    while (num) {
-        tmp = num % 10;
-        num = (num - tmp) / 10;
-        sum += tmp;
-    }
-console.log(sum)
-} if (sum <= 9){
-    console.log("Cумма цифр однозначна")
-} else {
-    console.log("Cумма цифр двухзначна")
+let lang = 'ru';
+
+switch (lang) {
+    case 1 (lang == 'ru'):
+	document.write('рус');
+    break;
+    case 2 (lang == 'en'):
+	document.write('анг');
+    break;
+    case 3 (lang == 'de'):
+	document.write('нем');
+    break;
+    default:
+	document.write('язык не поддерживается');
+    break;
 }
