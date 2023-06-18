@@ -1,13 +1,12 @@
-let arr = [...'12345'];
-console.log(arr);
-// 2
-let arr1 = ['a', ...'12345'];
-console.log(arr1);
-// 3
-let arr2 = [...'12345', ...'56789'];
-console.log(arr2);
-// 4
-let arr3 = ['a', 'b', 'c'];
-let arr4 = [...arr3, ...'12345'];
+function func(...nums) {
+  let sum = 0;
+  let count = 0
+for (let num of nums) {
+  sum += num;
+  count++;
+}
 
-console.log(arr4);
+  return sum / count;
+}
+let result = func(1, 2, 3, 4, 1, 1);
+console.log(result);
