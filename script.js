@@ -1,12 +1,7 @@
-let parent = document.querySelector('#parent');
+let elem   = document.querySelector('#elem');
+let remove = document.querySelector('#remove');
 
-for (let i = 1; i <= 9; i++) {
-	let p = document.createElement('p');
-	p.textContent = i;
-	
-	p.addEventListener('click', function() {
-		this.remove();
-	});
-	
-	parent.appendChild(p);
-}
+remove.addEventListener('click', function(event) {
+	elem.remove();
+	event.preventDefault();
+});
