@@ -1,7 +1,13 @@
-let elem   = document.querySelector('#elem');
-let remove = document.querySelector('#remove');
+let elems = document.querySelectorAll('#parent p');
 
-remove.addEventListener('click', function(event) {
-	elem.remove();
-	event.preventDefault();
-});
+for (let elem of elems) {
+	let remove = document.createElement('a');
+	remove.href = '';
+	remove.textContent = 'remove';
+	elem.appendChild(remove);
+	
+	remove.addEventListener('click', function(event) {
+		elem.remove();
+		event.preventDefault();
+	});
+}
