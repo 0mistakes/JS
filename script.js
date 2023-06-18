@@ -1,28 +1,23 @@
 "use strict";
 
-console.log('Task 1');
-let i = 1;
+let arr = ['a', 'b', 'c', 'd', 'e'];
 
-while (i <= 100) {
-	console.log(i);
-	i++;
+console.log('Task 1');
+for (let i = 0; i < arr.length; i++) {
+	console.log(arr[i]);
 }
 
 console.log('Task 2');
-let y = 11;
-
-while (y <= 33) {
-	console.log(y);
-	y++;
+for (let i = 1; i < arr.length-1; i++) {
+	console.log(arr[i]);
 }
 
 console.log('Task 3');
-let num = 23;
-let count = 0;
-
-while (num <= 1000) {
-	num *= 3;
-	count++;
+for (let i = arr.length-1; i >= 0 ; i--) {
+	console.log(arr[i]);
 }
-console.log('Iter count', + count);
-console.log(num);
+
+console.log('Task 4');	
+for (let i = 0; i <= arr.length-1; i++) {
+	console.log(arr[i]);
+}
