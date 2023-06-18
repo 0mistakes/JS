@@ -1,38 +1,37 @@
-for (let elem of arr) {
-	res += elem;
+"use strict";
+
+
+let str = '';
+
+for (let i = 1; i <= 5; i++) {
+	str += '-';
 }
 
-console.log(res);
+console.log(str);
 
 
-arr = [2, 5, 9, 3, 1, 4];
-res = 0;
+str = '';
 
-for (let elem of arr) {
-	if (elem % 2 == 0){
-		res += elem;
-	}
-	
+for (let i = 1; i <= 9; i++) {
+	str += i;
 }
 
-console.log(res);
+console.log(str);
 
 
-arr = [2, 5, 9, 3, 1, 4];
-res = 0;
+str = '';
 
-for (let elem of arr) {
-	res += elem**2;	
+for (let i = 9; i >= 1; i--) {
+	str += i;
 }
 
-console.log(res);
+console.log(str);
 
 
-arr = [2, 5, 9, 3, 1, 4];
-res = 1;
+str = '';
 
-for (let elem of arr) {
-	res *= elem;	
+for (let i = 1; i <= 9; i++) {
+	str += i + '-';
 }
 
-console.log(res);
+console.log(str);
