@@ -1,12 +1,4 @@
-let date = new Date();
-function addZero(num) {
-    if (num >= 0 && num <= 9) {
-        return "0" + num;
-    } else {
-        return num;
-    }
-}
+let str = '2025-12-31';
+let res = str.split('-').reverse().join('.');
 
-console.log(
-    addZero(date.getHours()) + ':' + addZero(date.getMinutes()) + ':' + addZero(date.getSeconds()) + ' ' +
-    addZero(date.getDate()) + '.' + addZero(date.getMonth() + 1) + '.' + date.getFullYear());
+console.log(res);
