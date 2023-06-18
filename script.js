@@ -1,7 +1,9 @@
-function setText(id, text) {
-	let elem = document.getElementById(id);
-	elem.textContent = text;
+function setText(selector, text) {
+	let elems = document.querySelectorAll(selector);
+	
+	for (let elem of elems) {
+		elem.textContent = text;
+	}
 }
 
-setText('elem1', 'text1');
-setText('elem2', 'text2');
+setText('.elem', 'text');
