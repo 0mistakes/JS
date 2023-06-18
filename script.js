@@ -1,100 +1,70 @@
-function test1() {
-  let num = 1;
-
-  function func() {
-     console.log(num);
-  }
-
-  func();
+function func1() {
+  return function () {
+     return 1;
+  };
 }
 
-test1(); // 1
+function func2() {
+  return function () {
+     return 2;
+  };
+};
+
+console.log(func1()() + func2()());
 
 
 
 
-function test2() {
-  let num = 1;
 
-  function func() {
-     console.log(num);
-  }
+
+function func() {
+  return function () {
+     return function () {
+        return function () {
+           return function () {
+              return "!";
+           };
+        };
+     };
+  };
 }
 
-test2(); // ничего
+console.log(func()()()()());
 
 
 
 
 
-function test3() {
-  let num = 1;
 
-  function func() {
-     console.log(num);
-  }
-
-  func();
-}
-// ничего
-
-
-
-function test4() {
-  let num;
-
-  function func() {
-     console.log(num);
-  }
-
-  num = 1;
-  func();
-
-  num = 2;
-  func();
+function func3(num1) {
+  return function (num2) {
+     return function (num3) {
+        return num1 + num2 + num3;
+     };
+  };
 }
 
-test4(); // 1   2
+console.log(func3(2)(3)(4));
 
 
 
 
 
-function test5(num1, num2) {
-  function func() {
-     console.log(num1 + num2);
-  }
-
-  func();
+function func4(num1) {
+  let arr = [];
+  arr.push(num1);
+  return function (num2) {
+     arr.push(num2);
+     return function (num3) {
+        arr.push(num3);
+        return function (num4) {
+           arr.push(num4);
+           return function () {
+              return arr;
+           };
+        };
+     };
+  };
 }
 
-test5(1, 2); // 3
-
-
-
-
-
-function test6(num1, num2) {
-  function func() {
-     console.log(num1 + num2);
-  }
-
-  num1 = 2;
-  func();
-}
-
-test6(1, 2); // 4
-
-
-
-
-
-function test7(num) {
-  function func(localNum) {
-     console.log(localNum);
-  }
-
-  func(num);
-}
-
-test7(1); // 1
+console.log(func4(2)(3)(4)(5)())
