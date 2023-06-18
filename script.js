@@ -1,6 +1,15 @@
-let elem = document.querySelector('input');
+let elem = document.querySelector('#elem');
 
-elem.addEventListener('keypress', function(event) {
-	console.log(event.key);
-	console.log(event.code);
+elem.addEventListener('click', function(event) {
+	if (event.ctrlKey) {
+		console.log('нажат Ctrl' + 1);
+	}
+	
+	if (event.altKey) {
+		console.log('нажат Alt'+1);
+	}
+	
+	if (event.shiftKey) {
+		console.log('нажат Shift'+1);
+	}
 });
