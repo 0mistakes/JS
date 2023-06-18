@@ -1,16 +1,8 @@
 window.onload = function() {
-  const input = document.getElementById('input');
-  const select = document.getElementById('select');
+  const mySelect = document.getElementById("mySelect");
+  const options = mySelect.options;
   
-  input.addEventListener('blur', () => {
-    const value = parseInt(input.value);
-    if (!isNaN(value)) {
-      select.selectedIndex = value - 1;
-    }
-  });
-  // 2
-  const select1 = document.getElementById('weekday-select');
-    const today = new Date().getDay();
-    const option = select1.querySelector(`option[value="${today}"]`);
-    option.selected = true;
+  for (let i = 0; i < options.length; i++) {
+    options[i].text += " " + options[i].value;
+  }
   }
