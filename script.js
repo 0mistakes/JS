@@ -1,7 +1,8 @@
 window.onload = function() {
-  let elem = document.querySelector('#elem');
+  let elem = document.getElementById('elem');
   
-  elem.addEventListener('click', function() {
-  console.log(event);
+  document.addEventListener('mousemove', function(event) {
+      elem.innerHTML = event.clientX + ' : ' + 
+          event.clientY; 
   });
   }
