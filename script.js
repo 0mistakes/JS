@@ -1,83 +1,100 @@
-let obj = {
-  1: {
-     1: 11,
-     2: 12,
-     3: 13,
-  },
-  2: {
-     1: 21,
-     2: 22,
-     3: 23,
-  },
-  3: {
-     1: 24,
-     2: 25,
-     3: 26,
-  },
+let data = {
+  1: [
+     'data11',
+     'data12',
+     'data13',
+  ],
+  2: [
+     'data21',
+     'data22',
+     'data23',
+  ],
+  3: [
+     'data31',
+     'data32',
+     'data33',
+  ],
+  4: [
+     'data41',
+     'data42',
+     'data43',
+  ],
 };
 
-let result = 0;
-
-for (let key in obj) {
-  let obj3 = obj[key];
-  for (let obj1 in obj3) {
-     result += obj3[obj1]
-  };
-};
-
-console.log(result)
-
-let obj2 = {
-  1: {
-     1: {
-        1: 111,
-        2: 112,
-        3: 113,
-     },
-     2: {
-        1: 121,
-        2: 122,
-        3: 123,
-     },
-  },
-  2: {
-     1: {
-        1: 211,
-        2: 212,
-        3: 213,
-     },
-     2: {
-        1: 221,
-        2: 222,
-        3: 223,
-     },
-  },
-  3: {
-     1: {
-        1: 311,
-        2: 312,
-        3: 313,
-     },
-     2: {
-        1: 321,
-        2: 322,
-        3: 323,
-     },
-  },
-};
-
-let result1 = 0;
-
-for (let key in obj2) {
-  let obj_3 = obj2[key];
-
-  for (let key2 in obj_3) {
-     let obj_2 = obj_3[key2];
-
-     for (let key3 in obj_2) {
-        result1 += obj_2[key3]
-     }
+for (let key in data) {
+  let fullData = data[key]
+  for (let item of fullData) {
+     console.log(item)
   }
 };
 
-console.log(result1)
+let data1 = [
+  {
+     1: 'data11',
+     2: 'data12',
+     3: 'data13',
+  },
+  {
+     1: 'data21',
+     2: 'data22',
+     3: 'data33',
+  },
+  {
+     1: 'data31',
+     2: 'data32',
+     3: 'data33',
+  },
+];
+
+for (let key of data1) {
+  for (let item in key) {
+     console.log(key[item])
+  }
+};
+
+let data3 = [
+  {
+     1: [
+        'data111',
+        'data112',
+        'data113',
+     ],
+     2: [
+        'data121',
+        'data122',
+        'data123',
+     ],
+  },
+  {
+     1: [
+        'data211',
+        'data212',
+        'data213',
+     ],
+     2: [
+        'data221',
+        'data222',
+        'data223',
+     ],
+  },
+  {
+     1: [
+        'data411',
+        'data412',
+        'data413',
+     ],
+     2: [
+        'data421',
+        'data422',
+        'data423',
+     ],
+  },
+];
+
+for (let key of data3) {
+  for (let item in key) {
+     for (let key1 of key[item]) {
+        console.log(key1)
+     }
+  }
+};
