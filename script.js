@@ -1,16 +1,19 @@
-let arr = [1, 2, 3, 4, 5];
-function func(num1, num2, num3, 
-	num4, num5) { 
-return num1 + num2 + num3 + num4 
-		+ num5; 
-}
-console.log(func(...arr));
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+let arr  = ['a', ...arr1, 'b', 'c', 
+	...arr2]; 
+console.log(arr);
 // 2
-function func2(n1, n2, n3, n4, n5, n6, n7, n8) {
-return (n1 + n2 + n3 + n4) * (n5 + n6 + n7 + n8);
-}
-console.log(func2(1, ...[2, 3, 4], 5, ...[6], ...[7, 8]));
+let arr3 = [1, 2, 3];
+let arr4 = [4, 5, 6];
+
+let arr5  = ['a', ...arr3, ...arr3, 'b', 
+	'c']; 
+console.log(arr5);
 // 3
-let arr3 = [1, 2, 3, 4, 5];
-let min = Math.min(...arr3);
-console.log(min)
+let arr6 = [1, 2, 3];
+let arr7 = [...arr6, 4, 5, 6];
+
+let arr8  = ['a', 'b', 'c', ...arr7];
+console.log(arr8);
