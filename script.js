@@ -1,97 +1,56 @@
-let str = 'js';
-console.log(str.toUpperCase());
+let arr1 = [1, 2, 3];
+   arr1.push(4, 5, 6);
 
-let str2 = 'JS';
-console.log(str2.toLowerCase());
+   console.log(arr1);
 
-let str3 = 'я учу javascript!';
+   let arr2 = [1, 2, 3];
+   arr2.unshift(4, 5, 6);
 
-let a1 = str3.substr(2, 3);
-let a2 = str3.substr(6, 10);
-console.log(a1, a2);
+   console.log(arr2);
 
+   let arr3 = [1, 2, 3];
+   console.log(arr3.shift());
 
-let b1 = str3.substring(2, 5);
-let b2 = str3.substring(6, 16);
-console.log(b1, b2);
+   let arr4 = [1, 2, 3];
+   console.log(arr4.pop());
 
+   let arr5 = [1, 2, 3, 4, 5];
+   arr5 = arr5.slice(0, 3);
 
-let c1 = str3.slice(2, 5);
-let c2 = str3.slice(6, 16);
-console.log(c1, c2);
+   console.log(arr5);
 
+   let arr6 = [1, 2, 3, 4, 5];
+   let newVar = arr6.slice(3);
 
+   console.log(newVar);
 
-let str4 = 'abcde';
-console.log(str4.indexOf('c'));
+   let arr7 = [1, 2, 3, 4, 5];
+   arr7.splice(1, 2)
 
+   console.log(arr7)
 
-let str5 = 'abcde';
-if (str5.indexOf('a') >= 0) {
-   console.log('true')
-} else {
-   console.log('false')
+   let arr8 = [1, 2, 3, 4, 5];
+
+   arr8.splice(3, 0, 'a', 'b', 'c');
+
+   console.log(arr8);
+
+   let arr9 = [1, 2, 3, 4, 5];
+
+   arr9.splice(1, 0, 'a', 'b');
+   arr9.splice(6, 0, 'c');
+   arr9.splice(8, 0, 'e');
+
+   console.log(arr9);
+   
+   let arr10 = [1, 2, 3, 4, 5];
+
+   console.log(arr10.indexOf(3));
+
+   let arr11 = [1, 2, 3, 4, 5];
+
+   if (arr11.indexOf(3) >= 0) {
+      console.log(true);
+   } else {
+      console.log(false);
 };
-
-
-let str6 = 'bcade';
-if (str6.indexOf('a') == 0) {
-   console.log('true')
-} else {
-   console.log('false')
-};
-
-
-
-let str7 = 'bcdea';
-if (str7.indexOf('a') == str7.length - 1) {
-   console.log('true')
-} else {
-   console.log('false')
-};
-
-
-let str8 = 'http://bcdea';
-if (str8.indexOf('http://') == 0) {
-   console.log('true')
-} else {
-   console.log('false')
-};
-
-
-let str9 = 'http://bcdea.html';
-if (str9.lastIndexOf('.html') == str9.length - 5) {
-   console.log('true')
-} else {
-   console.log('false')
-};
-
-
-let str10 = 'http://abcd.html';
-if (str10.startsWith('http://')) {
-   console.log('true')
-} else {
-   console.log('false')
-};
-
-
-let str11 = 'http://abcd.html';
-if (str11.endsWith('.html')) {
-   console.log('true')
-} else {
-   console.log('false')
-};
-
-
-let str12 = '1-2-3-4-5';
-let newArr = str12.split('-');
-console.log(newArr);
-
-
-let str13 = '12345';
-let newArr1 = str13.split('');
-console.log(newArr1);
-
-
-let arr = [1, 2, 3, 4, 5];
-console.log(arr.join('-'))
