@@ -1,14 +1,7 @@
-let tds = document.querySelectorAll('#table td');
-
-let color = 'color1';
-for (let td of tds) {
-	td.addEventListener('click', function() {
-		if (color == 'color1') {
-			color = 'color2'
-		} else {
-			color = 'color1'
-		}
-		
-		this.classList.add(color);
-	});
+function setText(id, text) {
+	let elem = document.getElementById(id);
+	elem.textContent = text;
 }
+
+setText('elem1', 'text1');
+setText('elem2', 'text2');
