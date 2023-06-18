@@ -1,14 +1,6 @@
-window.onload = function() {
-  let ul = document.querySelector('#elem');
-  
-  ul.addEventListener('click', function(event) {
-    let target = event.target;
-    if (target.tagName === 'LI') {
-      target.textContent += '!';
-    } else if (target.tagName === 'UL') {
-      let li = document.createElement('li');
-      li.textContent = 'new item';
-      ul.appendChild(li);
-    }
-  });
-  }
+let elem = document.querySelector('input');
+
+elem.addEventListener('keypress', function(event) {
+	console.log(event.key);
+	console.log(event.code);
+});
