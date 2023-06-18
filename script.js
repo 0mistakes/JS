@@ -1,39 +1,29 @@
 "use strict";
 
 //////
-let arr = ['a', 'b', 'c', 'd', 'e'];
-let flag = false;
+let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+let count = 0;
 
-for (let elem of arr) {
-   if (elem == 'c') {
-	  flag = true;
-	  break;
-   }
-}
-
-if (flag === true) {
-   console.log('+++');
-} else {
-   console.log('---');
-}
-
-//////
-let num = 4;
-let flag2 = true;
-let i = 2;
-
-while (i < num) {
-   if (num % i == 0) {
-	  flag2 = !flag2;
-	  break;
-
+for (let i of arr) {
+   if (i == 3) {
+	  count += 1
    } else {
-	  i += 1;
+	  continue;
    };
 };
 
-if (flag2) {
-   console.log(`Число ${num} является простым`)
-} else {
-   console.log(`Число ${num} не является простым`)
-}
+console.log(count);
+
+//////
+let arr1 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+let count1 = 0;
+
+for (let i of arr1) {
+   if (i == 3 || i == 2) {
+	  count1 += 1
+   } else {
+	  continue;
+   };
+};
+
+console.log(count1);
