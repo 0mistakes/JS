@@ -1,3 +1,2 @@
-setInterval(function() {
-	console.log('!');
-}, 1000);
+let i = 100;
+setInterval(() => console.log(--i), 1000);
