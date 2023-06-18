@@ -1,8 +1,7 @@
-let buttons = document.querySelectorAll('button');
+let tds = document.querySelectorAll('#table td');
 
-for (let button of buttons) {
-	button.addEventListener('click', function() {
-		let elem = document.querySelector('#' + this.dataset.elem);
-		elem.classList.toggle('hidden');
+for (let td of tds) {
+	td.addEventListener('click', function() {
+		this.classList.add('active');
 	});
 }
