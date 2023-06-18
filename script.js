@@ -1,8 +1,9 @@
-function func() {
-  return (
-      String(new Date().getFullYear()) + " " +
-      String(new Date().getMonth() + 1) + " " +
-      String(new Date().getDate())
-  );
-}
-console.log(func());
+let options = {
+  color: "red",
+  width: 400,
+  height: 500,
+};
+let {color, width, height} = options;
+console.log(color)
+console.log(width)
+console.log(height)
