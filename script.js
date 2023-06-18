@@ -1,5 +1,5 @@
 let elem = document.querySelector('#elem');
 
-setInterval(function() {
-	elem.value = Number(elem.value) + 1;
-}, 1000);
+elem.addEventListener('click', function() {
+	setInterval(() => console.log(this.value), 1000);
+});
