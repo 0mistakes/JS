@@ -1,51 +1,49 @@
-let str1 = 'Hello world';
-   let res1 = str1.slice(0) + str1.slice(-1).toUpperCase();
+let num = '12345';
+let arr = num.split('');
+let sum = 0;
 
-   console.log(res1)
+for (let digit of arr) {
+   sum += Number(digit);
+}
 
-   let str2 = 'Hello world';
-   let res2 = str2.slice(0, 2).toUpperCase() + str2.slice(2);
+console.log(sum);
 
-   console.log(res2)
+let num1 = 12345;
+let arr1 = String(num1).split('');
+let sum1 = 0;
 
-   let str3 = 'London';
-   let res3 = str2.slice(0, 1).toLowerCase() + str2.slice(1);
+for (let digit of arr1) {
+   sum1 += Number(digit);
+}
 
-   console.log(res3)
+console.log(sum1);
 
-   let str4 = 'word1 word2 word3';
+let num2 = 12345;
+let arr2 = String(num2).split('');
+let sum2 = 0;
 
-   console.log(str4)
+for (let digit of arr2) {
+   sum2 += Number(digit);
+}
 
-   let word = str4.split(' ');
+console.log(sum2);
 
-   for (let i = 0; i <= word.length - 1; i++) {
-      word[i] = word[i].slice(0, 1).toUpperCase() + word[i].slice(1);
-   };
+let num3 = 12345;
+let arr3 = String(num3).split('');
 
-   str4 = word.join(' ');
+let sum3 = 0;
+for (let digit of arr3) {
+   sum3 += Number(digit);
+}
 
-   console.log(str4)
+console.log(sum3);
 
-   let str5 = 'var_test_text';
+let num4 = 12345;
+let arr4 = String(num4).split('');
+let prod = 1;
 
-   console.log(str5)
+for (let digit of arr4) {
+   prod *= Number(digit);
+}
 
-   let word1 = str5.split('_');
-
-   for (let i = 0; i <= word1.length - 1; i++) {
-      word1[i] = word1[i].slice(0, 1).toUpperCase() + word1[i].slice(1);
-   };
-
-   str5 = word1.join('');
-
-   console.log(str5)
-
-   let newStr = str5.slice(0, 1).toLowerCase() + str5.slice(1);
-
-   console.log(newStr)
-
-   let str7 = 'Hello World!';
-   let result = str7.split('').reverse().join('');
-
-   console.log(result); 
+console.log(prod);
