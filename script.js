@@ -1,13 +1,10 @@
-let elem1 = document.querySelector('#elem1');
-let elem2 = document.querySelector('#elem2');
-let elem3 = document.querySelector('#elem3');
+let div = document.querySelector('div');
 
-elem1.addEventListener('click', function() {
-	console.log('зеленый');
-});
-elem2.addEventListener('click', function() {
-	console.log('голубой');
-});
-elem3.addEventListener('click', function() {
-	console.log('красный');
+div.addEventListener('click', function(event) {
+	if (event.target.matches('div')) {
+		console.log('клик именно по диву');
+	}
+	if (event.target.matches('p')) {
+		console.log('клик именно по абзацу');
+	}
 });
