@@ -1,10 +1,10 @@
-let div = document.querySelector('div');
+let parent = document.querySelector('#parent');
+let button = document.querySelector('button');
+let block  = document.querySelector('#block');
 
-div.addEventListener('click', function(event) {
-	if (event.target.matches('div')) {
-		console.log('клик именно по диву');
-	}
-	if (event.target.matches('p')) {
-		console.log('клик именно по абзацу');
-	}
+button.addEventListener('click', function() {
+	block.classList.add('active');
+});
+parent.addEventListener('click', function() {
+	block.classList.remove('active');
 });
