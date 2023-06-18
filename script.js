@@ -1,79 +1,124 @@
-let employees = [
-  {
-     name: 'name1',
-     salary: 300,
-  },
-  {
-     name: 'name2',
-     salary: 400,
-  },
-  {
-     name: 'name3',
-     salary: 500,
-  },
-];
+let months = {
+  'ru': [
+     'январь',
+     'февраль',
+     'март',
+     'апрель',
+     'май',
+     'июнь',
+     'июль',
+     'август',
+     'сентябрь',
+     'октябрь',
+     'ноябрь',
+     'декабрь',
+  ],
+  'en': [
+     'january',
+     'february',
+     'march',
+     'april',
+     'may',
+     'june',
+     'july',
+     'august',
+     'september',
+     'october',
+     'november',
+     'december',
+  ],
+};
 
-for (let item of employees) {
-  console.log(item.name + ' ' + '-' + ' ' + item.salary)
+let lang = 'ru'; // может быть или 'ru' или 'en'
+let month = 5;   // число от 0 до 11
+
+console.log(months[lang][month])
+
+let affairs = {
+  '2018': {
+     11: {
+        29: ['дело111', 'дело112', 'дело113'],
+        30: ['дело121', 'дело122', 'дело123'],
+     },
+     12: {
+        30: ['дело211', 'дело212', 'дело213'],
+        31: ['дело221', 'дело222', 'дело223'],
+     },
+  },
+  '2019': {
+     12: {
+        29: ['дело311', 'дело312', 'дело313'],
+        30: ['дело321', 'дело322', 'дело323'],
+        31: ['дело331', 'дело332', 'дело333'],
+     }
+  },
+};
+
+let year = '2018';
+let month1 = 11;
+let day = 29;
+
+console.log(affairs[year][month1][day])
+
+let obj = {
+  key1: {
+     key2: '12',
+     key3: '13',
+  },
+  key2: {
+     key4: '24',
+     key5: '25',
+  },
 }
 
-let employees2 = [
-  {
-     name: 'name1',
-     salary: 300,
-  },
-  {
-     name: 'name2',
-     salary: 400,
-  },
-  {
-     name: 'name3',
-     salary: 500,
-  },
-];
+let key1 = 'key1';
+let key2 = 'key2';
+let keyItem = 'key4'
 
-let sum = 0;
+console.log(obj[key2][keyItem]);
 
-for (let item of employees) {
-  sum += item.salary;
-};
-
-console.log(sum)
-
-let employees3 = [
-  {
-     name: 'name1',
-     salary: 300,
-     age: 28,
+let obj1 = {
+  key1: {
+     key2: '12',
+     key3: '13',
   },
-  {
-     name: 'name2',
-     salary: 400,
-     age: 29,
+  key2: {
+     key4: '24',
+     key5: '25',
   },
-  {
-     name: 'name3',
-     salary: 500,
-     age: 30,
-  },
-  {
-     name: 'name4',
-     salary: 600,
-     age: 31,
-  },
-  {
-     name: 'name5',
-     salary: 700,
-     age: 32,
-  },
-];
+}
 
-let sum2 = 0;
+let key12 = 'key1';
+let key22 = 'key2';
 
-for (let item of employees3) {
-  if (item.age >= 30) {
-     sum2 += item.salary
-  };
-};
+console.log(obj[key22].key4);
 
-console.log(sum2);
+let obj3 = {
+  key1: {
+     key2: '12',
+     key3: '13',
+  },
+  key2: {
+     key4: '24',
+     key5: '25',
+  },
+}
+
+let key13 = 'key1';
+let key23 = 'key2';
+
+console.log(obj[key23].key4);
+
+let obj4 = {
+  key1: {
+     key2: '12',
+     key3: '13',
+  },
+  key2: {
+     key4: '24',
+     key5: '25',
+  },
+}
+
+let key14 = 'key2';
+console.log(obj[key14].key4);
