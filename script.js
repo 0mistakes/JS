@@ -1,14 +1,11 @@
-;(function(root, type, amount) {
-	let parent = document.querySelector(root);
+;(function() {
+	let str = 'переменная модуля';
 	
-	for (let i = 1; i <= amount; i++) {
-		let elem = document.createElement(type);
-		parent.append(elem);
+	function func() {
+		alert('функция модуля');
 	}
-})('#parent', 'p', 5);
+	
+	window.func = func;
+})();
 
-let config = {
-	root:  '#parent',
-	type:  'p',
-	amount: 5
-}
+func(); 
