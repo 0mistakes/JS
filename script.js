@@ -1,7 +1,6 @@
-let elem = document.querySelector('#elem');
+let parent = document.querySelector('#parent');
 
-elem.addEventListener('click', function() {
-	setTimeout(function() {
-		alert('!');
-	}, 3000);
-});
+let p = document.createElement('p');
+p.textContent = '!';
+
+parent.appendChild(p);
