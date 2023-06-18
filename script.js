@@ -1,43 +1,18 @@
 "use strict";
 
 
-let arr = [1, 2, 0, 4, 5];
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 for (let elem of arr) {
-	if (elem == 0) {
-		break;
+	let result;
+	
+	if (elem % 2 == 0) {
+		result = elem * elem;
+	} else if (elem % 3 == 0) {
+		result = elem * elem * elem;
+	} else {
+		continue;
 	}
-	console.log(elem);
+	
+	console.log(result);
 }
-
-
-arr = [14, 21, 10, 4, -2, 5];
-let res = 0;
-for (let elem of arr) {
-	if (elem < 0) {
-		break;
-	}
-	res += elem;
-}
-console.log(res);
-
-
-arr = [14, 21, 32, 10, 3, -2, 5];
-res = 0;
-for (let elem of arr) {
-	if (elem == 3) {
-		break;
-	}
-	res += 1;
-}
-console.log(res);
-
-
-arr = [14, 21, 32, 10, 3, -2, 5];
-res = 0;
-let count = 0;
-for (let i = 1; res <=100; i++) {
-	res += i;
-	count++;
-}
-console.log(count);
