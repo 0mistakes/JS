@@ -1,7 +1,25 @@
 "use strict";
 
-let arr = '423';
+let str = 'abcde';
 
-if (arr.length == 3) {
-	document.write(+arr[0] + +arr[1] + +arr[2]);
+if (str[0] == 'a') {
+	document.write('yes', '<br>');
+} else {
+	document.write('no', '<br>');
+}
+
+let str1 = 'abx';
+
+if (str1[2] == 'x') {
+	document.write('yes', '<br>');
+} else {
+	document.write('no', '<br>');
+}
+
+let str2 = 'abc';
+
+if (str2[0] == 'a' || str2[0] == 'b') {
+	document.write('yes', '<br>');
+} else {
+	document.write('no', '<br>');
 }
