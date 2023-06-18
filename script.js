@@ -1,72 +1,40 @@
-function each(arr, callback) {
-  let result = [];
-
-  for (let elem of arr) {
-     result.push(callback(elem));
+let result1 = every([1, 2, 3, 4, 5], (elem) => {
+  if (elem > 0) {
+     return true;
+  } else {
+     return false;
   }
-
-  return result;
-}
-
-let result = each([1, 2, 3, 4, 5], function (num) {
-  return num * 2;
 });
 
-console.log(result);
 
 
 
 
 
 
-function each2(arr, callback) {
-  let result = [];
-
-  for (let elem of arr.reverse()) {
-     result.push(callback(elem));
+let result2 = every([1, 2, 3, 4, 5], (elem, index) => {
+  if (elem * index > 10) {
+     return true;
+  } else {
+     return false;
   }
-
-  return result;
-}
-
-let result2 = each2(["a", "b", "c", "d"], function (str) {
-  return str;
 });
 
-console.log(result2);
 
 
 
 
 
+let arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
 
-
-function each3(arr, callback) {
-  let result = [];
-
-  for (let elem of arr) {
-     result.push(
-        callback(elem.slice(0, 1).toUpperCase() + elem.slice(1))
-     );
+let result3 = each(arr, (elem, index) => {
+  if (elem * index > 10) {
+     return true;
+  } else {
+     return false;
   }
-
-  return result;
-}
-
-let result3 = each3(["hello", "world", "andrey"], function (str) {
-  return str;
 });
-
-console.log(result3);
-
-
-
-
-
-
-function square(num) {
-  return Math.pow(num, 3);
-}
-
-let result4 = each([1, 2, 3, 4, 5], square);
-console.log(result4);
