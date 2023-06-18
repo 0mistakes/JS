@@ -1,11 +1,8 @@
-let elem = document.querySelector('#elem');
-let show = document.querySelector('#show');
-let hide = document.querySelector('#hide');
+let buttons = document.querySelectorAll('button');
 
-hide.addEventListener('click', function() {
-	elem.classList.add('hidden');
-});
-
-show.addEventListener('click', function() {
-	elem.classList.remove('hidden');
-});
+for (let button of buttons) {
+	button.addEventListener('click', function() {
+		let elem = document.querySelector('#' + this.dataset.elem);
+		elem.classList.toggle('hidden');
+	});
+}
