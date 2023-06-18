@@ -1,23 +1,19 @@
 "use strict";
 
-let arr = ['a', 'b', 'c', 'd', 'e'];
+let arr = [2, 5, 9, 15, 1, 4];
 
 console.log('Task 1');
-for (let i = 0; i < arr.length; i++) {
-	console.log(arr[i]);
+for (let elem of arr) {
+	if (elem > 3 && elem < 10) {
+		console.log(elem);
+	}
 }
+
+let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
 
 console.log('Task 2');
-for (let i = 1; i < arr.length-1; i++) {
-	console.log(arr[i]);
-}
-
-console.log('Task 3');
-for (let i = arr.length-1; i >= 0 ; i--) {
-	console.log(arr[i]);
-}
-
-console.log('Task 4');	
-for (let i = 0; i <= arr.length-1; i++) {
-	console.log(arr[i]);
+for (let elem in obj) {
+	if (obj[elem] % 2 == 1) {
+		console.log(elem);
+	}
 }
