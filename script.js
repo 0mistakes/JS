@@ -1,2 +1,9 @@
-let i = 100;
-setInterval(() => console.log(--i), 1000);
+let i = 10;
+
+let timerId = setInterval(function() {
+	console.log(--i);
+	
+	if (i >= 10) {
+		clearInterval(timerId);
+	}
+}, 1000);
