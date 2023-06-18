@@ -1,7 +1,13 @@
-let elem = document.querySelector('#elem');
+let elem1 = document.querySelector('#elem1');
+let elem2 = document.querySelector('#elem2');
+let elem3 = document.querySelector('#elem3');
 
-elem.addEventListener('click', function(event) {
-	event.preventDefault('/');
-	this.elem = this.elem + ' (' + this.href + ')';
-	console.log('Вы не можете перейти по этой ссылке!');
+elem1.addEventListener('click', function() {
+	console.log('зеленый');
+});
+elem2.addEventListener('click', function() {
+	console.log('голубой');
+});
+elem3.addEventListener('click', function() {
+	console.log('красный');
 });
