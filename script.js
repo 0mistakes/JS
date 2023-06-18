@@ -1,13 +1,7 @@
-let parent = document.querySelector('#parent');
+let elems = document.querySelectorAll('p');
 
-for (let i = 1; i <= 9; i++) {
-	let p = document.createElement('p');
-	p.textContent = '!';
-	
-	// Навешиваем обработчик клика:
-	p.addEventListener('click', function() {
-		console.log(this.textContent);
+for (let elem of elems) {
+	elem.addEventListener('click', function() {
+		elem.remove();
 	});
-	
-	parent.appendChild(p);
 }
