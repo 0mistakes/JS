@@ -1,19 +1,7 @@
 "use strict";
 
-let min = 10;
+let arr = '423';
 
-if (min >= 0 && min <= 14) {
-	document.write('1 четверть');
-}
-
-if (min >= 15 && min <= 29) {
-	document.write('2 четверть');
-}
-
-if (min >= 30 && min <= 44) {
-	document.write('3 четверть');
-}
-
-if (min >= 45 && min <= 59) {
-	document.write('4 четверть');
+if (arr.length == 3) {
+	document.write(+arr[0] + +arr[1] + +arr[2]);
 }
