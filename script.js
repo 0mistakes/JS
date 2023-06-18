@@ -1,13 +1,8 @@
-let elems = document.querySelectorAll('#parent p');
+let elem = document.querySelector('#elem');
+let input = document.querySelector('#input');
 
-for (let elem of elems) {
-	let remove = document.createElement('a');
-	remove.href = '';
-	remove.textContent = 'remove';
-	elem.appendChild(remove);
-	
-	remove.addEventListener('click', function(event) {
-		elem.remove();
-		event.preventDefault();
-	});
-}
+input.value = elem.textContent;
+
+input.addEventListener('blur', function() {
+	elem.textContent = this.value;
+});
