@@ -1,56 +1,51 @@
-let arr1 = [1, 2, 3];
-   arr1.push(4, 5, 6);
+let str1 = 'Hello world';
+   let res1 = str1.slice(0) + str1.slice(-1).toUpperCase();
 
-   console.log(arr1);
+   console.log(res1)
 
-   let arr2 = [1, 2, 3];
-   arr2.unshift(4, 5, 6);
+   let str2 = 'Hello world';
+   let res2 = str2.slice(0, 2).toUpperCase() + str2.slice(2);
 
-   console.log(arr2);
+   console.log(res2)
 
-   let arr3 = [1, 2, 3];
-   console.log(arr3.shift());
+   let str3 = 'London';
+   let res3 = str2.slice(0, 1).toLowerCase() + str2.slice(1);
 
-   let arr4 = [1, 2, 3];
-   console.log(arr4.pop());
+   console.log(res3)
 
-   let arr5 = [1, 2, 3, 4, 5];
-   arr5 = arr5.slice(0, 3);
+   let str4 = 'word1 word2 word3';
 
-   console.log(arr5);
+   console.log(str4)
 
-   let arr6 = [1, 2, 3, 4, 5];
-   let newVar = arr6.slice(3);
+   let word = str4.split(' ');
 
-   console.log(newVar);
+   for (let i = 0; i <= word.length - 1; i++) {
+      word[i] = word[i].slice(0, 1).toUpperCase() + word[i].slice(1);
+   };
 
-   let arr7 = [1, 2, 3, 4, 5];
-   arr7.splice(1, 2)
+   str4 = word.join(' ');
 
-   console.log(arr7)
+   console.log(str4)
 
-   let arr8 = [1, 2, 3, 4, 5];
+   let str5 = 'var_test_text';
 
-   arr8.splice(3, 0, 'a', 'b', 'c');
+   console.log(str5)
 
-   console.log(arr8);
+   let word1 = str5.split('_');
 
-   let arr9 = [1, 2, 3, 4, 5];
+   for (let i = 0; i <= word1.length - 1; i++) {
+      word1[i] = word1[i].slice(0, 1).toUpperCase() + word1[i].slice(1);
+   };
 
-   arr9.splice(1, 0, 'a', 'b');
-   arr9.splice(6, 0, 'c');
-   arr9.splice(8, 0, 'e');
+   str5 = word1.join('');
 
-   console.log(arr9);
-   
-   let arr10 = [1, 2, 3, 4, 5];
+   console.log(str5)
 
-   console.log(arr10.indexOf(3));
+   let newStr = str5.slice(0, 1).toLowerCase() + str5.slice(1);
 
-   let arr11 = [1, 2, 3, 4, 5];
+   console.log(newStr)
 
-   if (arr11.indexOf(3) >= 0) {
-      console.log(true);
-   } else {
-      console.log(false);
-};
+   let str7 = 'Hello World!';
+   let result = str7.split('').reverse().join('');
+
+   console.log(result); 
