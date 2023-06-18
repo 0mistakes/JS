@@ -1,24 +1,18 @@
-;(function() {
-	let div = document.querySelector('#div');
-	let btn = document.querySelector('#btn');
+;(function(root) {
+	let parent = document.querySelector(root);
 	
-	function func(num) {
-		return num * num;
-	}
+	let div1 = parent.querySelector('#div1');
+	let div2 = parent.querySelector('#div2');
+	let div3 = parent.querySelector('#div3');
 	
-	btn.addEventListener('click', function() {
-		div.textContent = func(div.textContent);
-	});
-})();
-;(function(selector1, selector2) {
-	let div = document.querySelector(selector1);
-	let btn = document.querySelector(selector2);
-	
-	function func(num) {
-		return num * num;
-	}
+	let res  = parent.querySelector('#res');
+	let btn  = parent.querySelector('#btn');
 	
 	btn.addEventListener('click', function() {
-		div.textContent = func(div.textContent);
+		let num1 = Number(div1.textContent);
+		let num2 = Number(div2.textContent);
+		let num3 = Number(div3.textContent);
+		
+		res.textContent = num1 + num2 + num3;
 	});
-})('#div', '#btn');
+})('#parent');
