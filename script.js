@@ -1,5 +1,5 @@
-let p = document.createElement('p');
-p.innerHTML = '!!!';
+let parent = document.querySelector('#parent');
+let elem = parent.querySelector('.elem');
 
-let target = document.querySelector('#elem');
-target.insertAdjacentElement('afterBegin', p);
+let clone = elem.cloneNode(true);
+parent.appendChild(clone);
