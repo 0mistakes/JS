@@ -1,15 +1,19 @@
-let age = 19;
-let res;
+"use strict";
 
-if (age >= 18) {
-	res;
-	if (age <= 23) {
-		res = 'от 18 до 23';
-	} else {
-		res = 'больше 23';
-	}
-} else {
-	res = 'меньше 18';
+let min = 10;
+
+if (min >= 0 && min <= 14) {
+	document.write('1 четверть');
 }
 
-document.write(res);
+if (min >= 15 && min <= 29) {
+	document.write('2 четверть');
+}
+
+if (min >= 30 && min <= 44) {
+	document.write('3 четверть');
+}
+
+if (min >= 45 && min <= 59) {
+	document.write('4 четверть');
+}
