@@ -1,5 +1,11 @@
-function func() {
-	console.log(this);
-}
+let elem = document.querySelector('#elem');
+elem.addEventListener('blur', parent);
 
-func();
+function parent() {
+	console.log(this.value);
+	
+	function child() {
+		console.log(this.value); 
+	}
+	child();
+}
