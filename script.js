@@ -1,9 +1,11 @@
-let i = 10;
+let start = document.querySelector('#start');
 
-let timerId = setInterval(function() {
-	console.log(--i);
+start.addEventListener('click', function func() {
+	let i = 0;
 	
-	if (i >= 10) {
-		clearInterval(timerId);
-	}
-}, 1000);
+	setInterval(function() {
+		console.log(++i);
+	}, 1000);
+	
+	this.removeEventListener('click', func); 
+});
