@@ -1,19 +1,39 @@
 "use strict";
 
 //////
-let obj1 = {x: 1, y: 2, z: 3};
+let arr = ['a', 'b', 'c', 'd', 'e'];
+let flag = false;
 
-for (let key in obj1) {
-   obj1[key] = obj1[key] ** 2;
-};
+for (let elem of arr) {
+   if (elem == 'c') {
+	  flag = true;
+	  break;
+   }
+}
 
-console.log(obj1)
+if (flag === true) {
+   console.log('+++');
+} else {
+   console.log('---');
+}
 
 //////
-let obj2 = {x: 1, y: 2, z: 3};
+let num = 4;
+let flag2 = true;
+let i = 2;
 
-for (let key in obj2) {
-   obj2[key] += 1
+while (i < num) {
+   if (num % i == 0) {
+	  flag2 = !flag2;
+	  break;
+
+   } else {
+	  i += 1;
+   };
 };
 
-console.log(obj2)
+if (flag2) {
+   console.log(`Число ${num} является простым`)
+} else {
+   console.log(`Число ${num} не является простым`)
+}
