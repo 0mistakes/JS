@@ -1,32 +1,25 @@
 "use strict";
 
+//////
+let arr1 = [1, 2, 3, 4, 5];
 
-let arr1 = [];
-
-   for (let i = 1; i <= 10; i++) {
-      arr1.push(i)
-   }
-
+   for (let item in arr1) {
+      arr1[item] = arr1[item] ** 2;
+   };
    console.log(arr1)
 
-   let arr2 = [];
+//////
+let arr2 = [1, 2, 3, 4, 5];
 
-   for (let i = 1; i <= 10; i++) {
-      arr2.push('x')
-   }
+for (let item in arr2) {
+      arr2[item] -= 1
+};
+console.log(arr2)
 
-   console.log(arr2)
+//////
+let arr3 = [1, 2, 3, 4, 5];
 
-   let arr3 = [1, -9, 3, -5, 5, 6, -2, 7, -1];
-   let newArr = [];
-
-   for (let key in arr3) {
-      if (arr3[key] > 0) {
-         newArr.push(arr3[key]);
-      } else {
-         continue;
-      }
-   }
-
-   console.log(arr3); 
-   console.log(newArr); 
+for (let item in arr3) {
+   arr3[item] += 10
+};
+console.log(arr3)
