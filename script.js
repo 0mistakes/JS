@@ -1,9 +1,5 @@
-let parent = document.querySelector('#elem');
-let li = document.createElement('li');
-let li1 = document.createElement('li');
+let p = document.createElement('p');
+p.innerHTML = '!!!';
 
-li.innerHTML = 'end';
-li1.innerHTML = 'start';
-
-parent.append(li);
-parent.prepend(li1);
+let target = document.querySelector('#elem');
+target.insertAdjacentElement('afterBegin', p);
