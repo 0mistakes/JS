@@ -1,7 +1,5 @@
-function setText(elems, text) {
-	for (let elem of elems) {
-		elem.textContent = text;
-	}
-}
-let elems = document.querySelectorAll('.elem');
-setText(elems, 'text65');
+let div1 = document.querySelector('#elem1');
+createTable(3, 4, div1);
+
+let div2 = document.querySelector('#elem2');
+createTable(5, 6, div2);
