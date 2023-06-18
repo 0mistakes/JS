@@ -1,12 +1,15 @@
-"use strict";
-
-let age = 17;
-let adult;
+let age = 19;
+let res;
 
 if (age >= 18) {
-	adult = true;
+	res;
+	if (age <= 23) {
+		res = 'от 18 до 23';
+	} else {
+		res = 'больше 23';
+	}
 } else {
-	adult = false;
+	res = 'меньше 18';
 }
 
-document.write(adult);
+document.write(res);
