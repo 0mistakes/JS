@@ -1,12 +1,16 @@
 "use strict";
 
-let day = 12;
-if (day <= 10){
-    console.log("the first decade")
-} else if (day >= 11 && day <= 20){
-    console.log("the second decade")
-} else if (day >= 21 && day<=31){
-    console.log("the thith decade")
+let num = 99;
+if (num >= 10 && num <= 99){
+    var tmp, sum = 0;
+    while (num) {
+        tmp = num % 10;
+        num = (num - tmp) / 10;
+        sum += tmp;
+    }
+console.log(sum)
+} if (sum <= 9){
+    console.log("Cумма цифр однозначна")
 } else {
-    console.log("wrong number")
+    console.log("Cумма цифр двухзначна")
 }
