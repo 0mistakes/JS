@@ -1,172 +1,165 @@
-function test1() {
-  let num = 1;
-
-  return function () {
-     console.log(num);
-     num++;
-  };
-}
-
-let func = test1();
-func();
-func();
+!(function () {
+  console.log("!");
+})(); // !
 
 
 
 
 
-function test3() {
-  let num = 10;
 
-  return function () {
-     console.log(num);
-     num--;
-  };
-}
 
-let func3 = test3();
+let result = (function () {
+  return "!";
+})();
 
-func3();
-func3();
+console.log(result); // !
 
 
 
 
 
-function test2() {
-  let num = 10;
 
-  return function () {
-     if (num >= 0) {
-        console.log(num);
-        num--;
-     } else {
-        console.log("Конец");
-     }
-  };
-}
+let result4 = function () {
+  return "!";
+};
 
-let func2 = test2();
-
-func2();
-func2();
-func2();
-func2();
-func2();
-func2();
-func2();
-func2();
-func2();
-func2();
-func2();
-func2();
+console.log(result4); // код функции
 
 
 
 
 
-function func4() {
-  let num = 0;
 
-  return function () {
-     console.log(num);
-     num++;
-  };
-}
+let result5 = function () {
+  return "!";
+};
 
-func4()(); // 0
-func4()(); // 0
-func4()(); // 0
+console.log(result5()); // !
 
 
 
 
 
-function func5() {
-  let num = 0;
 
-  return function () {
-     console.log(num);
-     num++;
-  };
-}
+let result6 =
+  (function () {
+     return 1;
+  })() +
+  (function () {
+     return 2;
+  })();
 
-let test5 = func5;
-
-test5()(); // 0
-test5()(); // 0
-test5()(); // 0
+console.log(result6); // 3
 
 
 
 
 
-let counter = 0;
 
-function test55() {
-  return function () {
-     console.log(counter);
-     counter++;
-  };
-}
+let result7 = (function () {
+  return "!";
+})();
 
-let func55 = test55;
-
-let func56 = func55();
-let func57 = func55();
-
-func56(); // 0
-func57(); // 1
-func56(); // 2
-func57(); // 3
+console.log(result7); // !
 
 
 
 
 
-function test66() {
-  let counter = 0;
 
+let result8 = (function () {
+  return "!";
+})();
+
+console.log(result8); // !
+
+
+
+
+
+
+
+let result9 = function () {
+  return "!";
+};
+
+console.log(result9); // код функции
+
+
+
+
+
+
+let result10 = function () {
+  return "!";
+};
+
+console.log(result10()); // !
+
+
+
+
+
+
+(function (num1, num2) {
+  console.log(num1 + num2);
+})(1, 2); // 3
+
+
+
+
+
+
+
+(function () {
   return function () {
      return function () {
-        console.log(counter);
-        counter++;
+        console.log("!");
      };
   };
-}
-
-let func66 = test66()();
-
-let func67 = func66;
-let func68 = func66;
-
-func67(); // 0
-func68(); // 1
-func67(); // 2
-func68(); 
+})()()();
 
 
 
 
 
 
-function test80() {
-  let counter = 0;
+(function (num1) {
+  return function (num2) {
+     console.log(num1 + num2);
+  };
+})(1)(2);
 
-  return function () {
-     return function () {
-        console.log(counter);
-        counter++;
+
+
+
+
+
+(function (num1) {
+  return function (num2) {
+     return function (num3) {
+        console.log(num1 + num2 + num3);
      };
   };
-}
+})(1)(2)(3);
 
-let func80 = test80();
 
-let func81 = func80();
-let func82 = func80();
 
-func81(); // 0
-func82(); // 1
-func81(); // 2
-func82(); // 3
+
+
+let str = "str";
+
+(function () {
+  console.log(1);
+})(); // 1
+
+
+
+
+
+
+let str3 = "str"
+
+(function () {
+  console.log(1);
+})(); // error
