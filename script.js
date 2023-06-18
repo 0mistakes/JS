@@ -1,8 +1,7 @@
-let elem1 = document.querySelector('#elem1');
-let elem2 = document.querySelector('#elem2');
-let elem3 = document.querySelector('#elem3');
+let elem = document.querySelector('#elem');
 
-function func() {
-	console.log(this.value); 
+function func(surname, name) {
+	console.log(this.value + ', ' + surname + ' ' + name);
 }
-func.call(elem1,elem2,elem3);
+
+func.apply(elem); 
