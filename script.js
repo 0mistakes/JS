@@ -1,10 +1,11 @@
-let elems = document.querySelectorAll('li');
-let sum = 0;
-
-for (let elem of elems) {
-    let text = +elem.textContent;
-    if (text % 6 === 0) {
-        sum += text;
+var elem = document.getElementById("task");
+elem.addEventListener("click", func);
+var elem1 = document.getElementsByClassName("cls");
+function func() {
+    var sum = 0;
+    for (var i = 0; i < elem1.length; i++) {
+        sum += +elem1[i].value;
     }
+    var newElem = document.getElementById("sum");
+            newElem.value = sum;
 }
-console.log(sum)
