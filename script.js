@@ -1,2 +1,8 @@
-let date = new Date(2025, 4, 0);
-console.log(date.getDate());
+function isLeap(year){
+  year = new Date(2020, 2, 0);
+  if (year.getDate() == 29) {
+return true
+} else {
+return false
+}
+}
