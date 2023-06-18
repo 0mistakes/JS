@@ -1,13 +1,8 @@
-function checkDate(year, month, day) {
-  if (
-      new Date(year, month, day).getFullYear() == year &&
-      new Date(year, month, day).getMonth() == month &&
-      new Date(year, month, day).getDate() == day
-  ) {
-      return true;
-  } else {
-      return false;
-  }
+let now = new Date();
+let year = now.getFullYear();
+for (let month = 0; month <= 11; month++) {
+let date = new Date(year, month, 1);
+if (date.getDay() == 0) {
+    console.log(year + "-" + month + "-1");
 }
-console.log(checkDate(2025, 0, 31));
-console.log(checkDate(2025, 0, 32));
+}
